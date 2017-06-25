@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.ntv" name="NTV.mx" version="3.5.1" provider-name="ntv.mx">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">NTV.mx</summary>
+    <description lang="en">Stream all of your favourites sports,movies and live tv from NTV.mx</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+</addon>
+
+<addon id="repository.ntv-mx" name="ntv.mx repository" version="0.0.1" provider-name="ntv.mx">
+	<extension point="xbmc.addon.repository" name="ntv.mx repository">
+		<dir>
+		<info compressed="false">https://raw.githubusercontent.com/ntv-mx/repository.ntv-mx/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ntv-mx/repository.ntv-mx/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/ntv-mx/repository.ntv-mx/master/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install the ntv.mx addon</summary>
+		<description lang="en">visit ntv.mx for more information</description>
+		<genre>movies</genre>
+	</extension>
+</addon>
+</addons>
